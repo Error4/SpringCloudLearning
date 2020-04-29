@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: hystrix-turbine
+server:
+  port: 7007
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+# 聚合监控
+turbine:
+  # 要监控的服务列表，多个用逗号分隔
+  app-config: eureka-provider，feign-consumer
+  # 指定集群名称
+  cluster-name-expression: "'default'"

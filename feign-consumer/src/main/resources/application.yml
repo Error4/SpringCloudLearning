@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: feign-consumer
+server:
+  port: 7005
+eureka:
+  client:
+#    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000

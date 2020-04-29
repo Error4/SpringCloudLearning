@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: zuul-server # 应用名称
+server:
+  port: 7008
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+zuul:
+  routes:
+    test-service:  #xxx代表路由id，自定义名称即可
+      serviceId: eureka-provider
+      path: /myProvider/**
+  ignored-services: service-consumer  # 服务名称排除，多个服务逗号分隔，'*' 排除所有
+  prefix: /test #设置公共的前缀

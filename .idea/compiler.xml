@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hystrix" />
-        <module name="hustrixturbine" />
+        <module name="hystrixturbine" />
         <module name="serviceconsumer" />
         <module name="eureka-provider02" />
         <module name="eurekaprovider" />
@@ -28,9 +28,9 @@
       <module name="eurekaserver" options="-parameters" />
       <module name="eurekaserver02" options="-parameters" />
       <module name="feign-consumer" options="-parameters" />
-      <module name="hustrixturbine" options="-parameters" />
       <module name="hystrix" options="-parameters" />
       <module name="hystrix01" options="-parameters" />
+      <module name="hystrixturbine" options="-parameters" />
       <module name="serviceconsumer" options="-parameters" />
       <module name="springcloudlearning" options="-parameters" />
       <module name="zuul" options="-parameters" />
