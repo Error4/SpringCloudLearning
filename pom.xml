@@ -16,8 +16,12 @@
         <module>service-consumer</module>
         <module>feign-consumer</module>
         <module>hystrix</module>
-        <module>hustrix-turbine</module>
+        <module>hystrix-turbine</module>
         <module>zuul</module>
+        <module>gateway</module>
+        <module>config-server</module>
+        <module>config-client</module>
+        <module>consul</module>
     </modules>
     <!-- 继承 spring-boot-starter-parent 依赖 -->
     <!-- 使用继承方式，实现复用，符合继承的都可以被使用 -->

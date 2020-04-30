@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hustrix-turbine</artifactId>
+    <artifactId>hystrix-turbine</artifactId>
     <!-- 项目依赖 -->
     <dependencies>
         <!-- spring-cloud netflix hystrix 依赖 -->

@@ -6,29 +6,40 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hystrix-turbine" />
         <module name="hystrix" />
-        <module name="hystrixturbine" />
+        <module name="configserver" />
         <module name="serviceconsumer" />
+        <module name="gateway" />
         <module name="eureka-provider02" />
         <module name="eurekaprovider" />
         <module name="feign-consumer" />
         <module name="zuul" />
+        <module name="consul" />
         <module name="eurekaserver" />
+        <module name="configclient" />
         <module name="eurekaserver02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hustrix-turbine" target="1.5" />
       <module name="hystrix01" target="1.8" />
+      <module name="hystrixturbine" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configclient" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="consul" options="-parameters" />
       <module name="eureka-provider02" options="-parameters" />
       <module name="eurekaprovider" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="eurekaserver02" options="-parameters" />
       <module name="feign-consumer" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="hystrix" options="-parameters" />
+      <module name="hystrix-turbine" options="-parameters" />
       <module name="hystrix01" options="-parameters" />
       <module name="hystrixturbine" options="-parameters" />
       <module name="serviceconsumer" options="-parameters" />
