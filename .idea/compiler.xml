@@ -7,18 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hystrix-turbine" />
-        <module name="hystrix" />
-        <module name="configserver" />
-        <module name="serviceconsumer" />
         <module name="gateway" />
-        <module name="eureka-provider02" />
+        <module name="eurekaserver" />
+        <module name="eurekaserver02" />
+        <module name="consul" />
+        <module name="serviceconsumer" />
+        <module name="hystrix" />
         <module name="eurekaprovider" />
         <module name="feign-consumer" />
-        <module name="zuul" />
-        <module name="consul" />
-        <module name="eurekaserver" />
+        <module name="configserver" />
+        <module name="eureka-provider02" />
         <module name="configclient" />
-        <module name="eurekaserver02" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

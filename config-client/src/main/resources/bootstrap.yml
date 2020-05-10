@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    config:
+#      uri: http://localhost:7010 # 配置中心的具体地址，即 config-server
+#      name: config-client # 对应 {application} 部分，需要从git上读取的资源名称，资源名一般为application.profile.yml
+#      profile: test # 对应 {profile} 部分
+#      label: master # 对应 {label} 部分，即 Git 的分支。如果配置中心使用的是本地存储，则该参数无用
+      name: config-client # 对应 {application} 部分，需要从git上读取的资源名称，资源名一般为application.profile.yml
+      profile: test # 对应 {profile} 部分
+      label: master # 对应 {label} 部分，即 Git 的分支。如果配置中心使用的是本地存储，则该参数无用
+      discovery:
+        enabled: true
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+management:
+  endpoints:
+    web:
+      base-path: /actuator    # 访问端点根路径，默认为 /actuator
+      exposure:
+        include: '*'          # 需要开启的端点，这里主要用到的是 refresh 这个端点

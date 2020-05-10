@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: cloud-gateway
+#  zipkin:
+#    base-url: http://localhost:9411/ # 服务端地址
+#    sender:
+#      type: web                      # 数据传输方式，web 表示以 HTTP 报文的形式向服务端发送数据
+#    sleuth:
+#      sampler:
+#        probability: 1.0               # 收集数据百分比，默认 0.1（10%）
+  cloud:
+    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
+      routes:
+#        - id: consumer-service           # 路由 ID，唯一
+#          uri: http://localhost:7003/   # 目标 URI，路由到微服务的地址
+#          predicates:                   # 断言（判断条件）
+#            - Path=/order/**          # 匹配对应 URL 的请求，将匹配到的请求追加在目标 URI 之后
+        - id: provider-service
+          uri: http://localhost:7002/
+          predicates:
+            - Path=/product/**
+server:
+  port: 7009
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
