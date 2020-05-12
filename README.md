@@ -5,11 +5,7 @@ SpringCloud个人学习记录
 
 # github
 
-
-
-
-
-
+https://github.com/Error4/SpringCloudLearning/tree/master/notes
 
 # 掘金
 
@@ -20,3 +16,11 @@ SpringCloud个人学习记录
 [SpringCloud之服务消费 Ribbon](https://juejin.im/post/5eabebd06fb9a0438a6448f9)
 
 [SpringCloud之Feign 性能优化](https://juejin.im/post/5eb006c9f265da7bd44248fb)
+
+[SpringCloud之服务容错保护 Hystrix](https://juejin.im/post/5eb41c28f265da7be12488c5)
+
+[SpringCloud之链路追踪 Sleuth](https://juejin.im/post/5eb80de051882573a924da39)
+
+[SpringCloud之配置中心 Config](https://juejin.im/post/5eb80e21f265da7bdb321b47)
+
+[SpringCloud之配置中心 Consul](https://juejin.im/post/5ebab1536fb9a0436006c510)
